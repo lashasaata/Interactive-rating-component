@@ -43,6 +43,13 @@ const MainCard = styled.main`
   padding: 24px 22px 32px 24px;
   border-radius: 15px;
   background-image: radial-gradient(circle at 50% 0, #232a34, #181e27 90%);
+  @media (min-width: 1024px) {
+    width: 412px;
+    height: 416px;
+    padding: 32px 39px 32px 32px;
+    border-radius: 30px;
+    background-image: radial-gradient(circle at 50% 0, #232a34, #181e27 89%);
+  }
   div {
     width: 40px;
     height: 40px;
@@ -51,11 +58,18 @@ const MainCard = styled.main`
     align-items: center;
     justify-content: center;
     background-color: #262e38;
+    @media (min-width: 1024px) {
+      width: 48px;
+      height: 48px;
+    }
   }
   section {
     display: flex;
     gap: 18px;
     margin-top: 24px;
+    @media (min-width: 1024px) {
+      gap: 21.5px;
+    }
   }
 `;
 const Header = styled.h1`
@@ -63,6 +77,10 @@ const Header = styled.h1`
   font-weight: 700;
   color: #fff;
   margin-top: 16px;
+  @media (min-width: 1024px) {
+    margin-top: 30px;
+    font-size: 2.8rem;
+  }
 `;
 const Description = styled.p`
   font-size: 1.4rem;
@@ -70,6 +88,11 @@ const Description = styled.p`
   line-height: 1.57;
   color: #969fad;
   margin-top: 10px;
+  @media (min-width: 1024px) {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    margin-top: 7px;
+  }
 `;
 const Rate = styled.button`
   width: 42px;
@@ -87,6 +110,13 @@ const Rate = styled.button`
     cursor: pointer;
     background-color: #fc7614;
   }
+  @media (min-width: 1024px) {
+    width: 51px;
+    height: 51px;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    letter-spacing: 0.2px;
+  }
 `;
 const Submit = styled.button`
   width: 279px;
@@ -103,5 +133,12 @@ const Submit = styled.button`
     cursor: pointer;
     background-color: white;
     color: #fc7614;
+  }
+  @media (min-width: 1024px) {
+    width: 341px;
+    height: 45px;
+    margin-top: 32px;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
   }
 `;
