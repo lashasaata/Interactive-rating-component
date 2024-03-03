@@ -26,6 +26,13 @@ const Maincard = styled.main`
   padding: 34px 24px 37px;
   border-radius: 15px;
   background-image: radial-gradient(circle at 50% 0, #232a34, #181e27 90%);
+  @media (min-width: 1024px) {
+    width: 412px;
+    height: 416px;
+    padding: 45px 40px 45px 32px;
+    border-radius: 30px;
+    background-image: radial-gradient(circle at 50% 0, #232a34, #181e27 89%);
+  }
   div {
     display: flex;
     justify-content: center;
@@ -35,6 +42,10 @@ const Maincard = styled.main`
     border-radius: 22.5px;
     background-color: #262e38;
     margin-top: 24px;
+    @media (min-width: 1024px) {
+      width: 193px;
+      margin-top: 32px;
+    }
   }
 `;
 const Rated = styled.span`
@@ -42,6 +53,10 @@ const Rated = styled.span`
   font-weight: 400;
   line-height: 1.57;
   color: #fc7614;
+  @media(min-width: 1024px){
+    font-size: 1.5rem;
+    line-height: 1.6;
+  }
 }
 `;
 const Thanks = styled.h1`
@@ -49,6 +64,10 @@ const Thanks = styled.h1`
   font-weight: 700;
   color: #fff;
   margin-top: 24px;
+  @media (min-width: 1024px) {
+    font-size: 2.8rem;
+    margin-top: 32px;
+  }
 `;
 const Text = styled.p`
   font-size: 1.4rem;
@@ -58,4 +77,9 @@ const Text = styled.p`
   text-align: center;
   color: #969fad;
   margin-top: 10px;
+  @media (min-width: 1024px) {
+    line-height: 1.6;
+    font-size: 1.5rem;
+    margin-top: 7px;
+  }
 `;
